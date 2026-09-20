@@ -127,16 +127,6 @@ RETURN
    - If prompted, update the data source path in **Transform Data > Data Source Settings** pointing to `data/SuperStore_Sales_Dataset.csv`.
    - Click **Refresh** in the Home ribbon.
 
----
-
-## 🌐 How to View Without Power BI Desktop
-
-- **Live Web Report**: If you have a Power BI Pro or Microsoft 365 work/school account, publish to Power BI Service and generate an interactive embed link via **File > Embed Report > Publish to Web (Public)**.
-- **NovyPro Portfolio**: You can also showcase the live interactive version on [NovyPro](https://www.novypro.com/) for a portfolio-ready web view.
-- **PDF Report**: Download the exported multi-page PDF version directly from this repository.
-
----
-
 ## 👤 Author & Connect
 
 - **Author**: Shivam Raut
