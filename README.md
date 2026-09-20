@@ -77,32 +77,6 @@ superstore-sales-forecast/
 
 ---
 
-## 🏗️ Data Model Architecture
-
-The data model is engineered using a Star Schema pattern with a dedicated Calendar dimension to support time intelligence calculations. See full documentation in [docs/data_model.md](docs/data_model.md).
-
-```mermaid
-erDiagram
-    CALENDAR ||--o{ FACT_ORDERS : "1:N (Date = Order Date)"
-    FACT_ORDERS {
-        string Order_ID PK
-        date Order_Date FK
-        string Segment
-        string Region
-        string Category
-        decimal Sales
-        decimal Profit
-        int Delivery_Days
-    }
-    CALENDAR {
-        date Date PK
-        int Year
-        string Month_Name
-        int Month_Number
-    }
-```
-
----
 
 ## 💡 Strategic Recommendations & SQL Validation
 
