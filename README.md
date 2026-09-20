@@ -1,11 +1,10 @@
-# 📊 SuperStore Sales Analytics & 15-Day Forecasting Dashboard
+# 📊 SuperStore Sales Dashboard
 
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![DAX](https://img.shields.io/badge/DAX-Data%20Analysis%20Expressions-blue?style=for-the-badge)](dax/measures.md)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
-An end-to-end interactive Business Intelligence solution built in **Microsoft Power BI** analyzing retail sales performance, fulfillment turnaround, YoY profitability trends, and predictive 15-day revenue forecasting using time-series forecasting models.
-
+An end-to-end sales analytics dashboard built in Power BI, analyzing retail sales performance and forecasting future sales trends using the SuperStore dataset.
 ---
 
 ## 📌 Dashboard Previews
