@@ -8,7 +8,7 @@ An end-to-end interactive Business Intelligence solution built in **Microsoft Po
 
 ---
 
-## 📌Dashboard Previews
+## 📌 Dashboard Previews
 
 ### Page 1: Sales & Performance Overview
 ![SuperStore Sales Dashboard](screenshots/page1-overview.png)
@@ -49,6 +49,7 @@ Retail leadership requires visibility into transaction dynamics, customer segmen
 - **Data Modeling**: Star Schema with dedicated Calendar/Date dimension
 - **ETL**: Power Query (data cleansing, type transformations, custom duration columns)
 - **Analytics & Calculations**: DAX (Time Intelligence, YoY growth, Dynamic Rankings)
+- **Database & Querying**: SQL (verification scripts for KPI validation)
 - **Time Series Forecasting**: Power BI ETS (Exponential Smoothing) algorithm with 95% confidence bands
 
 ---
@@ -65,10 +66,49 @@ superstore-sales-forecast/
 │   └── page2-forecast.png             # Clean capture of 15-Day Forecast Report (Page 2)
 ├── data/
 │   ├── README.md                      # Data dictionary and ETL pipeline documentation
-│   └── SuperStore_Sales_Dataset.csv   # Retail sales raw/sample dataset
-└── dax/
-    └── measures.md                    # Catalog of key DAX formulas and business logic
+│   └── SuperStore_Sales_Dataset.csv   # Retail sales raw dataset
+├── dax/
+│   └── measures.md                    # Catalog of key DAX formulas and business logic
+├── sql/
+│   └── analysis_queries.sql           # SQL scripts validating KPIs and distribution
+└── docs/
+    ├── data_model.md                  # Star schema architecture & relationships
+    └── business_insights.md           # Executive recommendations & action plan
 ```
+
+---
+
+## 🏗️ Data Model Architecture
+
+The data model is engineered using a Star Schema pattern with a dedicated Calendar dimension to support time intelligence calculations. See full documentation in [docs/data_model.md](docs/data_model.md).
+
+```mermaid
+erDiagram
+    CALENDAR ||--o{ FACT_ORDERS : "1:N (Date = Order Date)"
+    FACT_ORDERS {
+        string Order_ID PK
+        date Order_Date FK
+        string Segment
+        string Region
+        string Category
+        decimal Sales
+        decimal Profit
+        int Delivery_Days
+    }
+    CALENDAR {
+        date Date PK
+        int Year
+        string Month_Name
+        int Month_Number
+    }
+```
+
+---
+
+## 💡 Strategic Recommendations & SQL Validation
+
+- **Executive Action Plan**: Read the complete strategic recommendations for supply chain staging, COD mitigation, and corporate upsell in [docs/business_insights.md](docs/business_insights.md).
+- **SQL Analysis & KPI Validation**: Review backend SQL verification scripts in [sql/analysis_queries.sql](sql/analysis_queries.sql).
 
 ---
 
@@ -128,4 +168,4 @@ RETURN
 
 - **Author**: Shivam Raut
 - **Email**: shivamraut747@gmail.com
-- **Portfolio**: [shivamraut.me](#)
+- **Portfolio**: [shivamraut.me](https://shivamraut.me)
