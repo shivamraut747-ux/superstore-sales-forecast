@@ -1,0 +1,13 @@
+# Power BI temporary files
+~$*.pbix
+*.tmp
+*.bak
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Git LFS or large files warning
+# If your .pbix is > 100MB, consider using Power BI Template (.pbit) or Git LFS
+# *.pbix
