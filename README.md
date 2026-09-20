@@ -8,10 +8,7 @@ An end-to-end interactive Business Intelligence solution built in **Microsoft Po
 
 ---
 
-## 📌 Live Demo & Dashboard Previews
-
-> [!TIP]
-> **Live Interactive Report**: _[Add your Power BI 'Publish to Web' or NovyPro Link Here]_
+## 📌Dashboard Previews
 
 ### Page 1: Sales & Performance Overview
 ![SuperStore Sales Dashboard](screenshots/page1-overview.png)
